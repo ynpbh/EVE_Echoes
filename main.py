@@ -7,10 +7,15 @@ import tkinter
 
 import win32com.client
 
+# 创建大漠对象
 dm = win32com.client.Dispatch("dm.dmsoft")
+
+# 创建Tkinter窗口对象
 tk = tkinter.Tk()
 
+# 窗口标题
 tk.title("EVE Echose AutoScript")
+# 窗口大小
 tk.geometry("500x320")
 
 
@@ -24,4 +29,4 @@ if __name__ == '__main__':
     print_hi('PyCharm')
     print(dm.ver())
     tk.mainloop()
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+
